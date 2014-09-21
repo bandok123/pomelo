@@ -1,3 +1,80 @@
+1.1.0 / 2014-09-12
+=================
+* [NEW] fit for libpomelo2
+* [NEW] upgrade pomelo-rpc to 0.4.5
+  [#612](https://github.com/NetEase/pomelo/pull/612)
+* [FIX] close http server after WebSocketServer.close
+  [#613](https://github.com/NetEase/pomelo/pull/613)
+* [FIX] update timeout.js
+  [#614](https://github.com/NetEase/pomelo/pull/614)
+* [FIX] fix typo
+
+1.0.4 / 2014-08-26
+=================
+* [NEW] upgrade pomelo-rpc to 0.4.3
+* [NEW] upgrade pomelo-logger to 0.1.6
+* [FIX] pomelo-masterha-plugin reconnect bug miss parameter env
+* [#582](https://github.com/NetEase/pomelo/pull/582)
+
+1.0.3 / 2014-07-18
+=================
+* [NEW] dictVersion : Similar to `protoVersion`, add `dictVersion` and skip sending dict when handshaking if possible.
+  [#572](https://github.com/NetEase/pomelo/pull/572)
+* [FIX] CRON : Upgrade pomelo-scheduler to v0.3.9. Fix a bug that will loss tasks if The number of days next month is greater than this month.
+  [#560](https://github.com/NetEase/pomelo/pull/560)
+  [pomelo-scheduler#4](https://github.com/NetEase/pomelo-scheduler/pull/4)
+* [FIX] hot update : Remove the error logging if a server doesn't have any handler.
+  [#562](https://github.com/NetEase/pomelo/pull/562)
+* [NEW] protobuf : Add `protobuf cache` into libpomelo, and add `useProto` handshake option to tell the client whether to use the protobuf.
+  [#564](https://github.com/NetEase/pomelo/pull/564)
+  [libpomelo#58](https://github.com/NetEase/libpomelo/pull/58)
+  [discuss(chinese)](http://nodejs.netease.com/topic/53c6c126898634292c8157a2)
+
+1.0.2 / 2014-07-10
+=================
+* fix server reconnect bug
+
+1.0.1 / 2014-07-03
+=================
+* merge pull request #538 #541 #545 #546 #547
+* update master watchdog notify method
+* upgrade pomelo-rpc to 0.4.2
+
+1.0.0 / 2014-06-19
+=================
+* mqtt connector
+* support ie6,7,8 with sioconnector
+* support hot update partially
+
+1.0.0-pre / 2014-05-16
+=================
+* add udpconnector
+* pomelo-rpc load balancing and fault tolerance
+* connector wss & tls support
+* pomelo-zookeeper-plugin
+* pomelo-scale-plugin
+* environment directory configuration support
+* pomelo-cli dynamic script
+
+0.9.10 / 2014-05-15
+=================
+* merge pull request #505
+* merge pull request #506
+* merge pull request from kaisatec
+* add getClientAddressBySessionId in sessionService
+
+0.9.9 / 2014-05-06
+=================
+* merge pull request #495
+* merge pull request #499
+* merge pull request #501
+* upgrade pomelo-admin to 0.3.4
+
+0.9.8 / 2014-05-04
+=================
+* remove unused module
+* update constants definition
+
 0.9.7 / 2014-04-25
 =================
 * merge pull request #486
